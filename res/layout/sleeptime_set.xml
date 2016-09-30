@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	 <LinearLayout
+        android:id="@+id/View"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+    	<LinearLayout
+       		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+        	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="sleepOFF 時間1      "/>
+        	<EditText
+            	android:id="@+id/OffTime1"
+            	android:layout_width="50dp"
+            	android:layout_height="wrap_content"
+				android:inputType="number"
+				android:digits="123456789"
+				android:imeOptions="actionNext"
+
+				android:maxLength="1"
+            	/>
+
+    	</LinearLayout>
+
+    	<LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+        	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="sleepOFF 時間2      "/>
+        	<EditText
+            	android:id="@+id/OffTime2"
+            	android:layout_width="50dp"
+            	android:layout_height="wrap_content"
+				android:inputType="number"
+				android:digits="123456789"
+				android:imeOptions="actionNext"
+
+				android:maxLength="1"
+            	/>
+
+    	</LinearLayout>
+
+    	<LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+        	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="sleepOFF 時間3      "/>
+        	<EditText
+            	android:id="@+id/OffTime3"
+            	android:layout_width="50dp"
+            	android:layout_height="wrap_content"
+				android:inputType="number"
+				android:digits="123456789"
+				android:imeOptions="actionNext"
+				android:maxLength="1"
+            	/>
+
+    	</LinearLayout>
+
+    	<LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+        	<TextView
+            	android:layout_width="wrap_content"
+           		android:layout_height="wrap_content"
+            	android:text="OFFtime 変更時間1"/>
+        	<EditText
+            	android:id="@+id/ChangeTime1"
+            	android:layout_width="50dp"
+            	android:layout_height="wrap_content"
+				android:inputType="number"
+
+				android:maxLength="2"
+            	/>
+
+    	</LinearLayout>
+
+    	<LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+        	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="OFFtime 変更時間2"/>
+        	<EditText
+            	android:id="@+id/ChangeTime2"
+            	android:layout_width="50dp"
+            	android:layout_height="wrap_content"
+				android:inputType="number"
+
+				android:maxLength="2"
+            	/>
+
+    	</LinearLayout>
+
+    	<LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+        	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="SleepWifi on/off     "/>
+        	<EditText
+            	android:id="@+id/flag"
+            	android:layout_width="50dp"
+            	android:layout_height="wrap_content"
+				android:inputType="number"
+				android:digits="01"
+				android:imeOptions="actionDone"
+				android:maxLength="1"
+            	/>
+
+    	</LinearLayout>
+
+
+    	<LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+        	<Button
+            	android:id="@+id/StartBt"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="start"
+            	android:gravity="center"
+            	/>
+
+        	<Button
+            	android:id="@+id/DisplayBt"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="表示"
+            	android:gravity="center"
+            	/>
+    	</LinearLayout>
+
+    	<TextView
+        	android:id="@+id/line"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+    	</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="co.jp.kms2.SleepTime"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="15"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SleepTimeActivity"
+            android:label="@string/title_activity_sleep_time">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SubActivity"></activity>
+        <service android:name=".SleepReceivService" android:enabled="true"></service>
+        <service android:name=".BatteryService" android:enabled="true"></service>
+        <receiver android:name=".StartupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
